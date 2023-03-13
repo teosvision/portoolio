@@ -2,7 +2,7 @@ import {
   mobile,
   backend,
   creator,
-  web,
+
   javascript,
   html,
   css,
@@ -15,10 +15,11 @@ import {
   mateo,
   parid,
   videography,
-  carrent,
-  jobit,
-  tripguide,
+  topshop,
+  paridi,
+  question,
   threejs,
+  portofolio,
 } from "../assets";
 
 export const navLinks = [
@@ -124,104 +125,93 @@ const experiences = [
     date: "Apr 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Created reusable UI components using libraries such as Material UI and Ant Design etc.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked with state management libraries like Redux and Zustand to manage complex application state.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
-  {
-    name: "Car Rent",
+    {
+    name: "Parid Smart Solution",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This website is still developing!",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+    
     ],
-    image: carrent,
+    image: question,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Top-Shop",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "E-commerce website where you can buy diffrent products. You can search them by category of its company ,colors, shipping and price.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
+    
       {
         name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: topshop,
+    source_code_link: "https://github.com/teosvision/Online-Shop",
+    web_link:'https://teonline-shop.netlify.app/',
   },
   {
-    name: "Trip Guide",
+    name: "Parid Consulting",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      " A website that present financial consulting services. " ,
+      
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
+   
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: paridi,
     source_code_link: "https://github.com/",
+     web_link:'https://www.paridconsulting.al/',
   },
+    {
+    name: "Portofolio",
+    description:
+      "This website is for creating an online portfolio.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+    
+    ],
+    image: portofolio,
+    source_code_link: "https://github.com/teosvision/portoolio",
+      web_link:'https://liftservice.al/',
+
+  },
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

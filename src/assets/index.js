@@ -21,9 +21,12 @@ import mateo from "./company/mateo.png";
 import videography from "./company/videography.png";
 import parid from "./company/parid.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import topshop from "./topshop.jpg";
+import paridi from "./paridi.jpg";
+import question from "./question.jpg";
+import webi from "./webi.png";
+import portofolio from "./portofolio.jpg";
+
 
 export {
   logo,
@@ -46,8 +49,10 @@ export {
   parid,
   mateo,
   videography,
-  carrent,
-  jobit,
-  tripguide,
+  topshop,
+  paridi,
+  question,
+  webi,
+  portofolio,
   figma,
 };

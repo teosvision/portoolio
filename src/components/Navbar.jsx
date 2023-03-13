@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import mateo from "../assets/company/mateo.png";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl">
+      <div className="w-full flex justify-between items-center max-w-full">
         <Link
           to="/"
           className="flex  items-center gap-2"
@@ -19,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 object-contain" />
+          <img src={mateo} alt="mateo" className="w-9 object-contain" />
           <p className="text-white text-[18px] font-bold flex cursor-pointer">
             Mateo &nbsp;{" "}
             <span className="sm:block hidden">| React Developer </span>{" "}

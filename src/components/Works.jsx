@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets";
+import { github, webi } from "../assets";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,13 +13,14 @@ const Projects = ({
   image,
   tags,
   source_code_link,
+  web_link,
   description,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] h-full w-full"
       >
         <div className="  relative w-full h-[230px]">
           <img
@@ -34,6 +35,17 @@ const Projects = ({
             >
               <img
                 src={github}
+                alt="github"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+
+            <div
+              onClick={() => window.open(web_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={webi}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -62,15 +74,17 @@ const Works = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>MY WORK</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
-        <motion.p
-          className="mt-4 text-secondary text-[17px] max-w-3xl
+        <div className="w-full flex">
+          <motion.p
+            className="mt-4 text-secondary text-[17px] max-w-3xl
        leading-[30px]"
-          variants={fadeIn("", "", 0.1, 1)}
-        >
-          Following projects showcases my skills and experience through
-          real-word examples of my work. Each projects is briefly described with
-          links to code repositores and live web application in it.
-        </motion.p>
+            variants={fadeIn("", "", 0.1, 1)}
+          >
+            Following projects showcases my skills and experience through
+            real-word examples of my work. Each projects is briefly described
+            with links to code repositores and live web application in it.
+          </motion.p>
+        </div>
         <div className="mt-20 flex flex-wrap gap-10">
           {projects.map((item, index) => (
             <Projects key={item.name} index={index} {...item} />
@@ -81,4 +95,4 @@ const Works = () => {
   );
 };
 
-export default SectionWarpper(Works, "");
+export default SectionWarpper(Works, "works");
