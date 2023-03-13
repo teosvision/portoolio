@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
+import { SectionWarpper } from "../hoc";
 const ServiceCard = ({ title, index, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -17,6 +17,9 @@ const ServiceCard = ({ title, index, icon }) => {
           options={{ max: 45, scale: "1", speed: 450 }}
         >
           <img src={icon} alt="title" className="w-16 h-16 object-contain" />
+          <h3 className="text-center text-white text-[20px] font-bold ">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -50,4 +53,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWarpper(About, "about");
