@@ -147,6 +147,10 @@ const projects = [
         name: "Tailwind",
         color: "green-text-gradient",
       },
+         {
+        name: "python",
+        color: "pink-text-gradient",
+      },
     
     ],
     image: question,
@@ -155,7 +159,7 @@ const projects = [
   {
     name: "Top-Shop",
     description:
-      "E-commerce website where you can buy diffrent products. You can search them by category of its company ,colors, shipping and price.",
+      "E-commerce website where you can buy different products. You can search them by category of its company ,colors, shipping and price.",
     tags: [
       {
         name: "react",
@@ -208,7 +212,7 @@ const projects = [
     ],
     image: portofolio,
     source_code_link: "https://github.com/teosvision/portoolio",
-      web_link:'https://liftservice.al/',
+      web_link:'https://mateoportofolio.netlify.app/',
 
   },
 

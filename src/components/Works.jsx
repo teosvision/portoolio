@@ -95,4 +95,4 @@ const Works = () => {
   );
 };
 
-export default SectionWarpper(Works, "works");
+export default SectionWarpper(Works, "work");
