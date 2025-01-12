@@ -20,13 +20,13 @@ import threejs from "./tech/threejs.svg";
 import mateo from "./company/mateo.png";
 import videography from "./company/videography.png";
 import parid from "./company/parid.png";
+import rozafa from "./company/rozafa.png";
 
 import topshop from "./topshop.jpg";
 import paridi from "./paridi.jpg";
 import question from "./question.jpg";
 import webi from "./webi.png";
 import portofolio from "./portofolio.jpg";
-
 
 export {
   logo,
@@ -47,6 +47,7 @@ export {
   tailwind,
   threejs,
   parid,
+  rozafa,
   mateo,
   videography,
   topshop,
